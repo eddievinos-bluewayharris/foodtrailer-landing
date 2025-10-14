@@ -103,8 +103,33 @@ export default function App() {
     </div>
   </div>
 </section>
-<a href="tel:+1509600332">
-  <button style={{background:'#28a745', color:'#fff', padding:'10px 15px', border:'none', borderRadius:'8px', cursor:'pointer'}}>
-    📞 Llamar ahora
-  </button>
-</a>
+return (
+  <div style={{fontFamily: 'Arial, sans-serif', padding: '2rem', textAlign: 'center'}}>
+
+    {/* … aquí va tu encabezado, texto y botón de WhatsApp … */}
+
+    {/* === Catálogo de modelos === */}
+    <section style={{marginTop: '50px'}}>
+      {/* … tarjetas de 8x12, 8x16, 8x20 y Personalizado … */}
+    </section>
+
+    {/* Botón de llamadas: DEBE estar dentro del mismo <div> padre */}
+    <div style={{ marginTop: '24px' }}>
+      <a href="tel:+1509600332">
+        <button
+          style={{
+            background: '#28a745',
+            color: '#fff',
+            padding: '10px 15px',
+            border: 'none',
+            borderRadius: '8px',
+            cursor: 'pointer'
+          }}
+        >
+          📞 Llamar ahora
+        </button>
+      </a>
+    </div>
+
+  </div>
+);
